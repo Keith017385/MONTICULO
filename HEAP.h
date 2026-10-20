@@ -23,7 +23,7 @@ public:
 template<typename T>
  HEAP<T>::HEAP(int TAM)
 {
-	 heap.resize(TAM);
+	 heap.resize(TAM+1);
 	 ultimo = 0;
 }
 
@@ -55,7 +55,7 @@ template<typename T>
 	 }
 	 else
 	 {
-		 int i = 0;
+		 int i = 1;
 		 while (i <= ultimo)
 		 {
 			 cout << " - " << heap[i].getNodo();
